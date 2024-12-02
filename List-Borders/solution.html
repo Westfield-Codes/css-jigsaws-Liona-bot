@@ -20,26 +20,42 @@
 
     ol {
       text-align: left;
+      border-style: solid;
     }
 
     /* Display each table in a row with inline-block */
-
-  
-    
-    /* Put a rounded 2px black border box around all tables */
+   /* Put a rounded 2px black border box around all tables */
+    /* add a top margin of 20px on each table, but not the parent */
+      /* subtract 20px from left margins of each child table, add it to the right margins */
+     /* 20 px space below the last equation in each table */
+     li {
+      display: inline-block;
+      border-radius: 20px;
+      margin-top: 20px;
+      margin-left: -20px;
+      margin-left: 20px;
+    }
     
     /* underline the top numbers red */
+
+    h4 {
+      text-decoration: underline;
+      text-decoration-color: red;
+    }
     
     /* go night mode on hovers over each timestable, but not the parent  */
+
+    li:hover {
+      background-color: black;
+      color:white;
+    }
   
-    /* 20 px space below the last equation in each table */
-
-    /* add a top margin of 20px on each table, but not the parent */
-
-     /* subtract 20px from left margins of each child table, add it to the right margins */
 
     /* put 25px padding at the bottom of the parent  */
-
+   #tables {
+      padding:25px;
+    }
+    
    </style>
 </head>
 
