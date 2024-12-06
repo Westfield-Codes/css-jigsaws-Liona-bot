@@ -14,18 +14,32 @@
         
 
         /* hide the in/out messages*/
-      
+
+        .middle {
+         opacity: 0;
+        }
 
         /* grayscale filter the out images */
 
+        .out {
+         -webkit-filter: grayscale(100%); 
+         filter: grayscale(100%); 
+        }
         
         /* hover states section (no css here) */
 
         /* gray-out the images */
   
+        img:hover {
+            opacity: 0.5;
+        }
         
         /* show the status message */
-  
+
+        .middle:hover {
+         opacity: 2;
+         transition-delay: 1ms;
+        }
 
       </style>
    </head>
